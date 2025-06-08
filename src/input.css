@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+/* Your scrollbar hiding styles */
+.scroll-auto::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-auto {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

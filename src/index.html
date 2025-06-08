@@ -1,0 +1,1567 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Collins' personal portfolio showcasing web development projects and skills."
+    />
+    <meta name="author" content="Collins Boakye" />
+    <meta name="theme-color" content="#0f172a" />
+    <link rel="icon" href="../media/my-avatar.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./animate.css" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Boakye's - Personal Portfolio</title>
+  </head>
+  <body class="bg-gray-900">
+    <div class="flex flex-col lg:flex-row px-4 sm:px-20 py-10 gap-10">
+      <!-- Aside -->
+      <aside
+        class="relative bg-gray-800 text-white flex flex-col items-center justify-center p-6 rounded-xl w-full lg:w-fit lg:sticky lg:top-10 max-h-screen overflow-hidden border border-gray-700"
+        role="complementary"
+        aria-label="User profile and contact information"
+      >
+        <!--Profile section-->
+        <article
+          class="w-full flex items-center sm:flex-col sm:items-center gap-4"
+        >
+          <!--Avatar with online status-->
+          <div class="relative">
+            <div>
+              <img
+                src="../media/my-avatar.png"
+                alt="Profile picture of Collins Boakye"
+                class="w-24 h-24 sm:w-36 sm:h-36 rounded-3xl mb-4 bg-gray-500 sm:rounded-xl"
+              />
+            </div>
+            <div
+              class="absolute bottom-5 right-0 flex size-3"
+              role="status"
+              aria-label="Online status indicator"
+            >
+              <span
+                class="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75"
+              >
+              </span>
+              <span
+                class="relative inline-flex size-3 rounded-full bg-green-500"
+              ></span>
+            </div>
+          </div>
+
+          <!--Name and role-->
+          <div>
+            <h2
+              class="text-xl sm:text-2xl font-bold text-center w-full mb-4 mt-4 text-white scroll-fade-up"
+            >
+              Collins Boakye
+            </h2>
+            <p
+              class="font-light text-sm bg-gray-700 px-2 py-2 rounded-md text-center w-fit mb-4 scroll-underline underline-animate"
+            >
+              Front-End Engineer
+            </p>
+          </div>
+        </article>
+
+        <!--Toggle button for small screens-->
+        <div>
+          <button
+            class="md:hidden lg:hidden absolute -top-1 right-0 w-12 h-12 bg-yellow-400/20 backdrop-blur-sm rounded-bl-2xl rounded-tr-2xl z-10 flex items-center justify-center"
+            id="toggleButton"
+            aria-controls="toggleContent"
+            aria-label="Toggle contact information"
+            aria-expanded="false"
+          >
+            <i class="fa-solid fa-angles-down text-gray-400 text-sm"></i>
+          </button>
+        </div>
+
+        <!--Contact info & social media-->
+        <section
+          id="toggleContent"
+          class="hidden sm:block sm:pr-0 sm:mr-0 sm:w-auto mr-2 w-full"
+        >
+          <hr
+            class="border-t border-gray-500 min-w-[90%] my-4 scroll-underline underline-animate"
+          />
+          <!--Contact details-->
+          <address class="not-italic">
+            <!--Start of contact Info-->
+            <section class="flex items-center scroll-fade-up mb-4">
+              <div
+                class="bg-gray-900 h-10 w-10 flex items-center justify-center rounded-xl mr-4 shadow-[-2px_-1px_1px_rgba(255,255,0,0.3)]"
+              >
+                <i class="fa-solid fa-envelope text-yellow-300"></i>
+              </div>
+              <div class="flex flex-col">
+                <span
+                  class="font-light text-gray-500 leading-tight text-sm mb-1"
+                  >EMAIL</span
+                >
+                <a
+                  href="mailto:Colly0087@gmail.com"
+                  class="text-gray-400 leading-tight text-sm sm:text-lg"
+                >
+                  Colly0087@gmail.com
+                </a>
+              </div>
+            </section>
+            <section class="flex items-center mb-4">
+              <div
+                class="bg-gray-900 h-10 w-10 flex items-center justify-center rounded-xl mr-4 shadow-[-2px_-1px_1px_rgba(255,255,0,0.3)]"
+              >
+                <i class="fa-solid fa-phone text-yellow-300"></i>
+              </div>
+              <div class="flex flex-col">
+                <span
+                  class="font-light text-gray-500 leading-tight text-sm mb-1"
+                  >PHONE</span
+                >
+                <a
+                  href="tel:+233541935607"
+                  class="text-gray-400 leading-tight text-sm sm:text-lg"
+                >
+                  +233-541935607
+                </a>
+              </div>
+            </section>
+
+            <section class="flex items-center mb-4 scroll-fade-up">
+              <div
+                class="bg-gray-900 h-10 w-10 flex items-center justify-center rounded-xl mr-4 shadow-[-2px_-1px_1px_rgba(255,255,0,0.3)]"
+              >
+                <i class="fa-solid fa-location-dot text-yellow-300"></i>
+              </div>
+              <div class="flex flex-col">
+                <span
+                  class="font-light text-gray-500 leading-tight text-sm mb-1"
+                  >LOCATION</span
+                >
+                <span class="text-gray-400 leading-tight text-sm sm:text-lg"
+                  >Techiman, Bono East</span
+                >
+              </div>
+            </section>
+          </address>
+
+          <hr
+            class="border-t border-gray-500 min-w-[90%] my-4 scroll-underline underline-animate"
+          />
+          <!--Social media links-->
+          <nav
+            class="flex sm:justify-center sm:items-center space-x-4 mt-6 scroll-underline underline-animate"
+            aria-label="Social media links"
+          >
+            <a
+              href="https://www.linkedin.com/in/collins-boakye"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              title="LinkedIn"
+            >
+              <i
+                class="fa-brands fa-linkedin text-gray-400 text-xl sm:text-2xl hover:text-gray-200"
+              ></i>
+            </a>
+            <a
+              href="https://github.com/Colly5090/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+              title="GitHub"
+            >
+              <i
+                class="fa-brands fa-github text-gray-400 text-xl sm:text-2xl hover:text-gray-200"
+              ></i>
+            </a>
+            <a
+              href="https://x.com/colly5090"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="X Twitter"
+              title="X"
+            >
+              <i
+                class="fa-brands fa-x-twitter text-gray-400 text-xl sm:text-2xl hover:text-gray-200"
+              ></i>
+            </a>
+            <a
+              href="mailto:colly0087@gmail.com"
+              aria-label="Send email"
+              title="email"
+            >
+              <i
+                class="fa-solid fa-envelope text-gray-400 text-xl sm:text-2xl hover:text-gray-200"
+              ></i>
+            </a>
+          </nav>
+        </section>
+      </aside>
+
+      <!-- Main Content -->
+      <div class="relative flex-1 min-w-0">
+        <header
+          class="sm:absolute sm:top-0 sm:right-0 sm:w-auto w-full fixed bottom-0 right-0 z-10 pointer-events-none"
+        >
+          <nav
+            class="pointer-events-auto"
+            aria-label="Main site navigation"
+            role="navigation"
+          >
+            <ul
+              class="flex sm:space-x-6 text-gray-300 bg-gray-700/40 backdrop-blur-md sm:bg-gray-600 p-6 lg:space-x-8 sm:rounded-bl-3xl sm:border-l sm:border-b border-gray-400 sm:border-none rounded-t-2xl sm:rounded-none justify-around sm:justify-start"
+            >
+              <li>
+                <button
+                  type="button"
+                  class="tab-link hover:text-white transition-colors duration-300"
+                  data-tab="about"
+                  aria-selected="true"
+                  aria-controls="about"
+                >
+                  About
+                </button>
+              </li>
+              <li>
+                <button
+                  type="button"
+                  class="tab-link hover:text-white transition-colors duration-300"
+                  data-tab="resume"
+                  aria-selected="false"
+                  aria-controls="resume"
+                >
+                  Resume
+                </button>
+              </li>
+              <li>
+                <button
+                  type="button"
+                  class="tab-link hover:text-white transition-colors duration-300"
+                  data-tab="portfolio"
+                  aria-selected="false"
+                  aria-controls="portfolio"
+                >
+                  Portfolio
+                </button>
+              </li>
+              <li>
+                <button
+                  type="button"
+                  class="tab-link hover:text-white transition-colors duration-300"
+                  data-tab="blog"
+                  aria-selected="false"
+                  aria-controls="blog"
+                >
+                  Blog
+                </button>
+              </li>
+              <li>
+                <button
+                  type="button"
+                  class="tab-link hover:text-white transition-colors duration-300"
+                  data-tab="contact"
+                  aria-selected="false"
+                  aria-controls="contact"
+                >
+                  Contact
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </header>
+        <!-- prevent growing -->
+        <main
+          class="bg-gray-800 rounded-xl p-4 overflow-y-auto border border-gray-700 relative"
+        >
+          <section
+            id="about"
+            class="tab-content"
+            role="tabpanel"
+            aria-labelledby="about-heading"
+          >
+            <!--About Me Header-->
+            <header
+              class="flex flex-col sm:mr-0 sm:w-auto mr-2 w-full sm:mt-10 pl-4 mb-6"
+            >
+              <h1 class="text-4xl font-bold text-white scroll-fade-up">
+                About Me
+              </h1>
+              <div
+                class="w-12 h-1 bg-yellow-600 mt-2 rounded-2xl scroll-underline underline-animate"
+              ></div>
+            </header>
+
+            <!-- About Me Description -->
+            <div class="mt-6 text-gray-300 pl-4 scroll-fade-up">
+              <p class="mb-4">
+                I'm a passionate
+                <strong class="text-white">Front-End Developer</strong> with a
+                solid foundation in HTML5, CSS3, and Vanilla JavaScript,
+                specializing in responsive design and intuitive UI/UX. I build
+                modern, user-focused web applications using frameworks like
+                React and Next.js. My core strengths include REST API
+                integration, performance optimization, and ensuring
+                cross-browser compatibility through clean, maintainable code.
+                With my debugging skills, I'm passionate about writing
+                pixel-perfect interfaces, and committed to agile workflows and
+                continuous learning.
+              </p>
+              <p class="mb-2">
+                If you're seeking a skilled front-end developer to bring your
+                web ideas to life, I am here to collaborate and create magic
+                together. Reach out, and let's transform your vision into a
+                reality!
+              </p>
+            </div>
+
+            <!--What l'm doing container-->
+            <section
+              class="sm:w-auto mr-2 pl-4 w-full"
+              aria-label="What I'm Doing"
+            >
+              <header class="mb-6 mt-8">
+                <h2 class="text-white font-semibold text-2xl scroll-fade-up">
+                  What I'm doing
+                </h2>
+              </header>
+
+              <div
+                class="grid grid-cols-1 sm:grid-cols-2 gap-6 p-2 rounded-xl scroll-fade-up about-section"
+              >
+                <!-- Card 1 -->
+                <article
+                  class="about-card flex flex-col sm:flex-row justify-center text-center sm:text-left items-center bg-gray-700 rounded-xl p-10 shadow-[-1px_-1px_1px_rgba(255,255,0,0.3)]"
+                >
+                  <div
+                    class="h-10 w-10 flex items-center justify-center rounded-xl mr-4 mb-4 sm:mb-0"
+                  >
+                    <i class="fa-solid fa-code text-yellow-300 text-5xl"></i>
+                  </div>
+                  <div class="flex flex-col">
+                    <h3
+                      class="font-normal text-white text-xl leading-tight mb-2 sm:ml-2"
+                    >
+                      Web development
+                    </h3>
+                    <p class="text-gray-400 leading-tight sm:ml-2">
+                      High-quality development of responsive and modern
+                      websites.
+                    </p>
+                  </div>
+                </article>
+                <!-- Card 2 -->
+                <article
+                  class="about-card flex flex-col sm:flex-row justify-center text-center sm:text-left items-center bg-gray-700 rounded-xl p-10 shadow-[-1px_-1px_1px_rgba(255,255,0,0.3)]"
+                >
+                  <div
+                    class="h-10 w-10 flex items-center justify-center rounded-xl mr-4 mb-4 sm:mb-0"
+                  >
+                    <i
+                      class="fa-solid fa-mobile-screen-button text-yellow-300 text-5xl mb-2"
+                    ></i>
+                  </div>
+                  <div class="flex flex-col">
+                    <h3
+                      class="font-normal text-white text-xl leading-tight mb-2"
+                    >
+                      Mobile Apps
+                    </h3>
+                    <p class="text-gray-400 leading-tight">
+                      Professional development of cross-platform mobile apps for
+                      Android and iOS.
+                    </p>
+                  </div>
+                </article>
+                <!-- Card 3 -->
+                <article
+                  class="about-card flex flex-col sm:flex-row justify-center text-center sm:text-left items-center bg-gray-700 rounded-xl p-10 shadow-[-1px_-1px_1px_rgba(255,255,0,0.3)]"
+                >
+                  <div
+                    class="h-10 w-10 flex items-center justify-center rounded-xl mr-4 mb-4 sm:mb-0"
+                  >
+                    <i class="fa-solid fa-users text-yellow-300 text-5xl"></i>
+                  </div>
+                  <div class="flex flex-col">
+                    <h3
+                      class="font-normal text-white text-xl leading-tight mb-2 sm:ml-2"
+                    >
+                      UI/UX Design
+                    </h3>
+                    <p class="text-gray-400 leading-tight sm:ml-2">
+                      The most modern and high-quality design made at a
+                      professional level.
+                    </p>
+                  </div>
+                </article>
+                <!-- Card 4 -->
+                <article
+                  class="about-card flex flex-col sm:flex-row justify-center text-center sm:text-left items-center bg-gray-700 rounded-xl p-10 shadow-[-1px_-1px_1px_rgba(255,255,0,0.3)]"
+                >
+                  <div
+                    class="h-10 w-10 flex items-center justify-center rounded-xl mr-4 mb-4 sm:mb-0"
+                  >
+                    <i
+                      class="fa-brands fa-connectdevelop text-yellow-300 text-5xl"
+                    ></i>
+                  </div>
+                  <div class="flex flex-col">
+                    <h3
+                      class="font-normal text-white text-xl leading-tight mb-2"
+                    >
+                      Backend Development
+                      <i class="text-sm text-gray-400">(Learning)</i>
+                    </h3>
+                    <p class="text-gray-400 leading-tight">
+                      Currently learning backend development using Flask and
+                      Django.
+                    </p>
+                  </div>
+                </article>
+              </div>
+            </section>
+
+            <!--Skill Container-->
+            <section>
+              <!-- Skills Section -->
+              <header class="mb-6 mt-8 pl-4">
+                <h2 class="text-white font-semibold text-2xl scroll-fade-up">
+                  Skills
+                </h2>
+              </header>
+              <!-- Scrollable wrapper with fixed width -->
+              <div
+                class="w-full overflow-x-auto scroll-auto"
+                aria-label="Skills carousel"
+              >
+                <div
+                  class="flex gap-4 w-max sm:gap-10 scroll-fade-up mb-2"
+                  role="list"
+                >
+                  <!-- Skill Cards -->
+                  <a
+                    href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="HTML5 skill link"
+                    title="HTML5"
+                    class="card-pump shrink-0 bg-gray-600 h-40 w-40 sm:h-48 sm:w-48 rounded-xl flex items-center justify-center"
+                  >
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                      alt="HTML5 logo"
+                      class="w-24 h-24"
+                    />
+                  </a>
+                  <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="CSS3 skill link"
+                    title="CSS3"
+                    class="card-pump shrink-0 bg-gray-600 h-40 w-40 sm:h-48 sm:w-48 rounded-xl flex items-center justify-center"
+                  >
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                      alt="CSS3 logo"
+                      class="w-24 h-24"
+                    />
+                  </a>
+                  <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="JavaScript skill link"
+                    title="JavaScript"
+                    class="card-pump shrink-0 bg-gray-600 h-40 w-40 sm:h-48 sm:w-48 rounded-xl flex items-center justify-center z-10"
+                  >
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                      alt="JavaScript logo"
+                      class="w-24 h-24"
+                    />
+                  </a>
+                  <a
+                    href="https://react.dev/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="React skill link"
+                    title="React"
+                    class="card-pump shrink-0 bg-gray-600 h-40 w-40 sm:h-48 sm:w-48 rounded-xl flex items-center justify-center z-10"
+                  >
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                      alt="React logo"
+                      class="w-24 h-24"
+                    />
+                  </a>
+                  <a
+                    href="https://nextjs.org/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="NextJS skill link"
+                    title="NextJS"
+                    class="card-pump shrink-0 bg-gray-600 h-40 w-40 sm:h-48 sm:w-48 rounded-xl flex items-center justify-center"
+                  >
+                    <img
+                      src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/nextdotjs.svg"
+                      alt="NextJS logo"
+                      class="w-24 h-24"
+                    />
+                  </a>
+                  <a
+                    href="https://tailwindcss.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="TailwindCSS skill link"
+                    title="TailwindCSS"
+                    class="card-pump shrink-0 bg-gray-600 h-40 w-40 sm:h-48 sm:w-48 rounded-xl flex items-center justify-center sm:z-10"
+                  >
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+                      alt="Tailwind CSS logo"
+                      class="w-24 h-24"
+                    />
+                  </a>
+                  <a
+                    href="https://www.figma.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Figma skill link"
+                    title="Figma"
+                    class="card-pump shrink-0 bg-gray-600 h-40 w-40 sm:h-48 sm:w-48 rounded-xl flex items-center justify-center"
+                  >
+                    <img
+                      src="https://commons.wikimedia.org/wiki/Special:FilePath/Figma-logo.svg"
+                      alt="Figma logo"
+                      class="w-24 h-24"
+                    />
+                  </a>
+                  <a
+                    href="https://www.postman.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Postman skill link"
+                    title="Postman"
+                    class="card-pump shrink-0 bg-gray-600 h-40 w-40 sm:h-48 sm:w-48 rounded-xl flex items-center justify-center"
+                  >
+                    <img
+                      src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg"
+                      alt="Postman logo"
+                      class="w-24 h-24"
+                    />
+                  </a>
+                  <a
+                    href="https://www.python.org/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Python3 skill link"
+                    title="Python3"
+                    class="card-pump shrink-0 bg-gray-600 h-40 w-40 sm:h-48 sm:w-48 rounded-xl flex items-center justify-center sm:z-10"
+                  >
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                      alt="Python logo"
+                      class="w-24 h-24"
+                    />
+                  </a>
+                  <a
+                    href="https://git-scm.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Git skill link"
+                    title="Git"
+                    class="card-pump shrink-0 bg-gray-600 h-40 w-40 sm:h-48 sm:w-48 rounded-xl flex items-center justify-center sm:z-10"
+                  >
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                      alt="Git logo"
+                      class="w-24 h-24"
+                    />
+                  </a>
+                  <a
+                    href="https://github.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="GitHub skill link"
+                    title="GitHub"
+                    class="card-pump shrink-0 bg-gray-600 h-40 w-40 sm:h-48 sm:w-48 rounded-xl flex items-center justify-center sm:z-10"
+                  >
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                      alt="GitHub logo"
+                      class="w-24 h-24"
+                    />
+                  </a>
+                </div>
+              </div>
+            </section>
+          </section>
+
+          <!--Resume Section-->
+          <section id="resume" class="tab-content hidden" role="tabpanel">
+            <header
+              class="flex flex-col sm:mr-0 sm:w-auto mr-2 w-full sm:mt-10 pl-4 mb-6"
+            >
+              <h1 class="text-4xl font-bold text-white scroll-fade-up">
+                Resume
+              </h1>
+              <div
+                class="w-12 h-1 bg-yellow-600 mt-2 rounded-2xl scroll-underline underline-animate"
+              ></div>
+            </header>
+
+            <ul class="mt-4 pl-4 list-none scroll-fade-up">
+              <li
+                class="relative pb-6 pl-5 ml-2 border-l border-gray-600 last:border-0 last:pb-0"
+              >
+                <div
+                  class="absolute rounded-xl -left-5 -top-1 bg-gray-700 h-10 w-10 flex items-center justify-center text-lg shadow-[-1px_-1px_1px_rgba(255,255,0,0.3)]"
+                >
+                  <i class="fa-solid fa-user-graduate text-yellow-400"></i>
+                </div>
+                <h2 class="ml-5 font-bold text-2xl text-white">Education</h2>
+                <br />
+              </li>
+              <li
+                class="relative pb-6 pl-5 ml-2 border-l border-gray-600 last:border-0 last:pb-0"
+              >
+                <div
+                  class="absolute w-4 h-4 bg-yellow-400 border-gray-600 border-4 rounded-full -left-2 top-0"
+                ></div>
+                <h3 class="text-white text-sm sm:text-base mb-1 ml-5 font-bold">
+                  African Leadership Academy (ALX Africa)
+                </h3>
+                <p class="text-gray-400 text-sm sm:text-base mt-1 ml-5">
+                  Diploma in Software Engineering – Front-End Specialization
+                  <br />
+                  <span class="text-yellow-400">2023 — 2024</span>
+                </p>
+              </li>
+              <li
+                class="relative pb-6 pl-5 ml-2 border-l border-gray-600 last:border-0 last:pb-0"
+              >
+                <div
+                  class="absolute w-4 h-4 bg-yellow-400 border-gray-600 border-4 rounded-full -left-2 top-0"
+                ></div>
+                <h3 class="text-white font-bold text-sm sm:text-base mb-1 ml-5">
+                  University of Ghana
+                </h3>
+                <p class="text-gray-400 text-sm sm:text-base mt-1 ml-5">
+                  +2 Science <br />
+                  <span class="text-yellow-400">2016 — 2020</span>
+                </p>
+              </li>
+            </ul>
+            <ul class="mt-4 pl-4 list-none scroll-fade-up">
+              <li
+                class="relative pb-6 pl-5 ml-2 border-l border-gray-600 last:border-0 last:pb-0"
+              >
+                <div
+                  class="absolute rounded-xl -left-5 -top-1 bg-gray-700 h-10 w-10 flex items-center justify-center text-lg shadow-[-1px_-1px_1px_rgba(255,255,0,0.3)]"
+                >
+                  <i class="fa-solid fa-briefcase text-yellow-400"></i>
+                </div>
+                <h2 class="ml-5 font-bold text-2xl text-white">Experience</h2>
+                <br />
+              </li>
+              <li
+                class="relative pb-6 pl-5 ml-2 border-l border-gray-600 last:border-0 last:pb-0"
+              >
+                <div
+                  class="absolute w-4 h-4 bg-yellow-400 border-gray-600 border-4 rounded-full -left-2 top-0"
+                ></div>
+                <h3 class="text-white font-bold text-sm sm:text-base mb-1 ml-5">
+                  Front-End Software Developer
+                </h3>
+                <p class="text-gray-400 text-sm sm:text-base mt-1 ml-5">
+                  Minnick IT Consultancy <br />
+                  <span class="text-yellow-400">Aug, 2024 — Present</span>
+                  <br />
+                  <span class="italic text-gray-400">Bono East, Ghana</span>
+                </p>
+                <ul class="mt-1 list-disc pl-3 text-gray-400 text-sm ml-5">
+                  <li class="marker:text-yellow-400">
+                    Used Figma for UI/UX design planning and Postman for API
+                    testing.
+                  </li>
+                  <li class="marker:text-yellow-400">
+                    Built a custom, validated form for user input.
+                  </li>
+                  <li class="marker:text-yellow-400">
+                    Set up Google sign-in using OAuth 2.0
+                  </li>
+                </ul>
+              </li>
+              <li
+                class="relative pb-6 pl-5 ml-2 border-l border-gray-600 last:border-0 last:pb-0"
+              >
+                <div
+                  class="absolute w-4 h-4 bg-yellow-400 border-gray-600 border-4 rounded-full -left-2 top-0"
+                ></div>
+                <h3 class="text-white font-bold text-sm sm:text-base mb-1 ml-5">
+                  Freelance Full-Stack Developer
+                </h3>
+                <p class="text-gray-400 text-sm sm:text-base mt-1 ml-5">
+                  MiPeony LLC <br />
+                  <span class="text-yellow-400">2024 — March, 2025 </span>
+                  <br />
+                  <em>Missouri, USA</em>
+                </p>
+
+                <ul class="mt-1 list-disc pl-3 text-gray-400 text-sm ml-5">
+                  <li class="marker:text-yellow-400">
+                    Developed and deployed a custom invoice maker for client
+                    invoicing.
+                  </li>
+                  <li class="marker:text-yellow-400">
+                    Integrated Stripe for seamless payment processing.
+                  </li>
+                  <li class="marker:text-yellow-400">
+                    Set up automated email sending
+                  </li>
+                  <li class="marker:text-yellow-400">
+                    Provided on-call support for maintenance and technical
+                    issues.
+                  </li>
+                </ul>
+              </li>
+              <li
+                class="relative pb-6 pl-5 ml-2 border-l border-gray-400 last:border-0 last:pb-0"
+              >
+                <div
+                  class="absolute w-4 h-4 bg-yellow-400 border-gray-600 border-4 rounded-full -left-2 top-0"
+                ></div>
+                <h3 class="text-white font-bold text-sm sm:text-base mb-1 ml-5">
+                  Front-End Developer Intern
+                </h3>
+                <p class="text-gray-400 text-sm sm:text-base mt-1 ml-5">
+                  Lakshmi Digital LLC <br />
+                  <span class="text-yellow-400">May, 2022 — Sep, 2022</span>
+                  <br />
+                  <em>Florida, USA</em>
+                </p>
+                <ul class="mt-1 list-disc pl-3 text-gray-400 text-sm ml-5">
+                  <li class="marker:text-yellow-400">
+                    Used Git and GitHub for version control and collaboration.
+                  </li>
+                  <li class="marker:text-yellow-400">
+                    Collaborated with cross-functional teams
+                  </li>
+                  <li class="marker:text-yellow-400">
+                    Assisted in developing and maintaining responsive web pages.
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <br /><br />
+            <div
+              class="flex sm:justify-end justify-center w-full sm:w-auto sm:px-0 px-2 mb-4"
+            >
+              <a
+                href="../media/Collins'_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="w-full sm:w-auto bg-gray-900 text-yellow-400 px-6 py-3 rounded-2xl sm:rounded-lg text-center font-semibold transition-colors duration-300 hover:bg-gray-600 hover:text-gray-800 sm:shadow-[-0.5px_-0.5px_0_rgba(212,175,55,1)] shadow-[-0.5px_-0.5px_0_rgba(224,255,255,0.25)]"
+              >
+                📄&ensp;Download CV
+              </a>
+            </div>
+          </section>
+
+          <!--Portfolio Section-->
+          <section id="portfolio" class="tab-content hidden mx-auto">
+            <div>
+              <header
+                class="flex flex-col sm:mr-0 sm:w-auto mr-2 w-full sm:mt-10 pl-4 mb-6"
+              >
+                <h2 class="text-4xl font-bold text-white scroll-fade-up">
+                  Portfolio
+                </h2>
+                <div
+                  class="w-12 h-1 bg-yellow-600 mt-2 rounded-2xl scroll-underline underline-animate"
+                ></div>
+              </header>
+              <!-- Navigation Tabs -->
+              <div class="flex justify-start pl-2 mb-8">
+                <!-- Mobile Dropdown -->
+                <div class="sm:hidden w-full">
+                  <select
+                    id="filterDropdown"
+                    class="bg-gray-800 text-white px-4 py-4 rounded-2xl w-full border border-gray-700 font-normal text-sm"
+                    aria-label="Filter portfolio by category"
+                  >
+                    <option value="all">Select category</option>
+                    <option value="all">All</option>
+                    <option value="application">Applications</option>
+                    <option value="web">Web Development</option>
+                    <option value="uiux">UI/UX</option>
+                  </select>
+                </div>
+
+                <!--Desktop Navs-->
+                <nav
+                  class="space-x-2 text-white hidden sm:flex sm:border sm:border-gray-600 sm:rounded-2xl sm:p-4 scroll-underline underline-animate"
+                  role="tablist"
+                  aria-label="Portfolio categories"
+                >
+                  <button
+                    class="filter-btn text-yellow-400 font-bold hover:bg-gray-700 hover:text-gray-400 transition duration-200 rounded-md px-4"
+                    data-filter="all"
+                    role="tab"
+                    aria-selected="true"
+                  >
+                    All
+                  </button>
+                  <button
+                    class="filter-btn hover:text-gray-400 hover:bg-gray-700 transition duration-200 rounded-md px-4"
+                    data-filter="application"
+                    role="tab"
+                    aria-selected="false"
+                  >
+                    Applications
+                  </button>
+                  <button
+                    class="filter-btn hover:text-gray-400 hover:bg-gray-700 transition duration-200 rounded-md px-4"
+                    data-filter="web"
+                    role="tab"
+                    aria-selected="false"
+                  >
+                    Web development
+                  </button>
+                  <button
+                    class="filter-btn hover:text-gray-400 hover:bg-gray-700 transition duration-200 rounded-md px-4"
+                    data-filter="uiux"
+                    role="tab"
+                    aria-selected="false"
+                  >
+                    UI/UX
+                  </button>
+                </nav>
+              </div>
+
+              <!-- Cards Grid -->
+              <div
+                class="grid grid-cols-1 sm:grid-cols-3 w-full pl-2 gap-x-4 gap-y-8 portfolio-section"
+              >
+                <!-- Application -->
+                <figure
+                  class="portfolio-item portfolio-card text-white rounded-lg overflow-hidden scroll-fade-up"
+                  data-category="application"
+                >
+                  <a href="blog-post-1.html" class="block text-white w-full">
+                    <div class="relative group overflow-hidden">
+                      <img
+                        src="https://images.pexels.com/photos/3183153/pexels-photo-3183153.jpeg"
+                        alt="Blog 1"
+                        class="w-full h-40 object-cover transition-transform duration-300 group-hover:scale-110 rounded-2xl"
+                      />
+
+                      <!-- Eye Icon Overlay -->
+                      <div
+                        class="absolute inset-0 flex items-center justify-center bg-gray-600/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg"
+                      >
+                        <div
+                          class="px-6 py-3 bg-gray-600 rounded-lg flex items-center justify-center border border-none"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="#FFD700"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M15 12A3 3 0 119 12a3 3 0 016 0zM2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.478 0-8.268-2.943-9.542-7z"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <figcaption class="p-4">
+                      <h3 class="font-normal text-gray-300">Invoice Maker</h3>
+                      <p class="text-gray-500 text-sm">Application</p>
+                    </figcaption>
+                  </a>
+                </figure>
+
+                <!-- Application -->
+                <figure
+                  class="portfolio-item portfolio-card text-white rounded-lg overflow-hidden scroll-fade-up"
+                  data-category="application"
+                >
+                  <a href="blog-post-1.html" class="block text-white w-full">
+                    <div class="relative group overflow-hidden">
+                      <img
+                        src="https://images.pexels.com/photos/3183153/pexels-photo-3183153.jpeg"
+                        alt="Blog 1"
+                        class="w-full h-40 object-cover transition-transform duration-300 group-hover:scale-110 rounded-2xl"
+                      />
+
+                      <!-- Eye Icon Overlay -->
+                      <div
+                        class="absolute inset-0 flex items-center justify-center bg-gray-600/60 bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg"
+                      >
+                        <div
+                          class="px-6 py-3 bg-gray-600 rounded-lg flex items-center justify-center border border-none"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="#FFD700"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M15 12A3 3 0 119 12a3 3 0 016 0zM2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.478 0-8.268-2.943-9.542-7z"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <figcaption class="p-4">
+                      <h3 class="font-normal text-gray-300">To Do App</h3>
+                      <p class="text-gray-500 text-sm">Application</p>
+                    </figcaption>
+                  </a>
+                </figure>
+                <figure
+                  class="portfolio-item portfolio-card text-white rounded-lg overflow-hidden scroll-fade-up"
+                  data-category="application"
+                >
+                  <a href="blog-post-1.html" class="block text-white w-full">
+                    <div class="relative group overflow-hidden">
+                      <img
+                        src="https://images.pexels.com/photos/3183153/pexels-photo-3183153.jpeg"
+                        alt="Blog 1"
+                        class="w-full h-40 object-cover transition-transform duration-300 group-hover:scale-110 rounded-2xl"
+                      />
+
+                      <!-- Eye Icon Overlay -->
+                      <div
+                        class="absolute inset-0 flex items-center justify-center bg-gray-600/60 bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg"
+                      >
+                        <div
+                          class="px-6 py-3 bg-gray-600 rounded-lg flex items-center justify-center border border-none"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="#FFD700"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M15 12A3 3 0 119 12a3 3 0 016 0zM2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.478 0-8.268-2.943-9.542-7z"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <figcaption class="p-4">
+                      <h3 class="font-normal text-gray-300">
+                        Document & Apparel Online Printing System
+                      </h3>
+                      <p class="text-gray-500 text-sm">Application</p>
+                    </figcaption>
+                  </a>
+                </figure>
+
+                <!-- Web Development -->
+                <figure
+                  class="portfolio-item portfolio-card text-white rounded-lg overflow-hidden z-10 scroll-fade-up"
+                  data-category="web"
+                >
+                  <a href="blog-post-1.html" class="block text-white w-full">
+                    <div class="relative group overflow-hidden">
+                      <img
+                        src="https://images.pexels.com/photos/3183153/pexels-photo-3183153.jpeg"
+                        alt="Blog 1"
+                        class="w-full h-40 object-cover transition-transform duration-300 group-hover:scale-110 rounded-2xl"
+                      />
+
+                      <!-- Eye Icon Overlay -->
+                      <div
+                        class="absolute inset-0 flex items-center justify-center bg-gray-600/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg"
+                      >
+                        <div
+                          class="px-6 py-3 bg-gray-600 rounded-lg flex items-center justify-center border border-none"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="#FFD700"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M15 12A3 3 0 119 12a3 3 0 016 0zM2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.478 0-8.268-2.943-9.542-7z"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <figcaption class="p-4">
+                      <h3 class="font-normal text-gray-300">
+                        Currency Exchange Rate App
+                      </h3>
+                      <p class="text-gray-500 text-sm">Web Development</p>
+                    </figcaption>
+                  </a>
+                </figure>
+                <figure
+                  class="portfolio-item portfolio-card text-white rounded-lg overflow-hidden z-10 scroll-fade-up"
+                  data-category="web"
+                >
+                  <a href="blog-post-1.html" class="block text-white w-full">
+                    <div class="relative group overflow-hidden">
+                      <img
+                        src="https://images.pexels.com/photos/3183153/pexels-photo-3183153.jpeg"
+                        alt="Blog 1"
+                        class="w-full h-40 object-cover transition-transform duration-300 group-hover:scale-110 rounded-2xl"
+                      />
+
+                      <!-- Eye Icon Overlay -->
+                      <div
+                        class="absolute inset-0 flex items-center justify-center bg-gray-600/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg"
+                      >
+                        <div
+                          class="px-6 py-3 bg-gray-600 rounded-lg flex items-center justify-center border border-none"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="#FFD700"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M15 12A3 3 0 119 12a3 3 0 016 0zM2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.478 0-8.268-2.943-9.542-7z"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <figcaption class="p-4">
+                      <h3 class="font-normal text-gray-300">Recipe App</h3>
+                      <p class="text-gray-500 text-sm">Web Development</p>
+                    </figcaption>
+                  </a>
+                </figure>
+                <figure
+                  class="portfolio-item portfolio-card text-white rounded-lg overflow-hidden z-10 scroll-fade-up"
+                  data-category="web"
+                >
+                  <a href="blog-post-1.html" class="block text-white w-full">
+                    <div class="relative group overflow-hidden">
+                      <img
+                        src="https://images.pexels.com/photos/3183153/pexels-photo-3183153.jpeg"
+                        alt="Blog 1"
+                        class="w-full h-40 object-cover transition-transform duration-300 group-hover:scale-110 rounded-2xl"
+                      />
+
+                      <!-- Eye Icon Overlay -->
+                      <div
+                        class="absolute inset-0 flex items-center justify-center bg-gray-600/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg"
+                      >
+                        <div
+                          class="px-6 py-3 bg-gray-600 rounded-lg flex items-center justify-center border border-none"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="#FFD700"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M15 12A3 3 0 119 12a3 3 0 016 0zM2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.478 0-8.268-2.943-9.542-7z"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <figcaption class="p-4">
+                      <h3 class="font-normal text-gray-300">Airbnb Clone</h3>
+                      <p class="text-gray-500 text-sm">Web Development</p>
+                    </figcaption>
+                  </a>
+                </figure>
+                <figure
+                  class="portfolio-item portfolio-card text-white rounded-lg overflow-hidden z-10 scroll-fade-up"
+                  data-category="web"
+                >
+                  <a href="blog-post-1.html" class="block text-white w-full">
+                    <div class="relative group overflow-hidden">
+                      <img
+                        src="https://images.pexels.com/photos/3183153/pexels-photo-3183153.jpeg"
+                        alt="Blog 1"
+                        class="w-full h-40 object-cover transition-transform duration-300 group-hover:scale-110 rounded-2xl"
+                      />
+
+                      <!-- Eye Icon Overlay -->
+                      <div
+                        class="absolute inset-0 flex items-center justify-center bg-gray-600/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg"
+                      >
+                        <div
+                          class="px-6 py-3 bg-gray-600 rounded-lg flex items-center justify-center border border-none"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="#FFD700"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M15 12A3 3 0 119 12a3 3 0 016 0zM2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.478 0-8.268-2.943-9.542-7z"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <figcaption class="p-4">
+                      <h3 class="font-normal text-gray-300">Simple Quiz App</h3>
+                      <p class="text-gray-500 text-sm">Web Development</p>
+                    </figcaption>
+                  </a>
+                </figure>
+                <figure
+                  class="portfolio-item portfolio-card text-white rounded-lg overflow-hidden z-10 scroll-fade-up"
+                  data-category="web"
+                >
+                  <a href="blog-post-1.html" class="block text-white w-full">
+                    <div class="relative group overflow-hidden">
+                      <img
+                        src="https://images.pexels.com/photos/3183153/pexels-photo-3183153.jpeg"
+                        alt="Blog 1"
+                        class="w-full h-40 object-cover transition-transform duration-300 group-hover:scale-110 rounded-2xl"
+                      />
+
+                      <!-- Eye Icon Overlay -->
+                      <div
+                        class="absolute inset-0 flex items-center justify-center bg-gray-600/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg"
+                      >
+                        <div
+                          class="px-6 py-3 bg-gray-600 rounded-lg flex items-center justify-center border border-none"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="#FFD700"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M15 12A3 3 0 119 12a3 3 0 016 0zM2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.478 0-8.268-2.943-9.542-7z"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <figcaption class="p-4">
+                      <h3 class="font-normal text-gray-300">
+                        Responsive Form with Validation
+                      </h3>
+                      <p class="text-gray-500 text-sm">Web Development</p>
+                    </figcaption>
+                  </a>
+                </figure>
+
+                <!-- UI/UX -->
+                <figure
+                  class="portfolio-item portfolio-card text-white rounded-lg overflow-hidden scroll-fade-up"
+                  data-category="uiux"
+                >
+                  <a href="blog-post-1.html" class="block text-white w-full">
+                    <div class="relative group overflow-hidden">
+                      <img
+                        src="https://images.pexels.com/photos/3183153/pexels-photo-3183153.jpeg"
+                        alt="Blog 1"
+                        class="w-full h-40 object-cover transition-transform duration-300 group-hover:scale-110 rounded-2xl"
+                      />
+
+                      <!-- Eye Icon Overlay -->
+                      <div
+                        class="absolute inset-0 flex items-center justify-center bg-gray-600/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg"
+                      >
+                        <div
+                          class="px-6 py-3 bg-gray-600 rounded-lg flex items-center justify-center border border-none"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="#FFD700"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M15 12A3 3 0 119 12a3 3 0 016 0zM2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.478 0-8.268-2.943-9.542-7z"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <figcaption class="p-4">
+                      <h3 class="font-normal text-gray-300">
+                        Personal Portfolio
+                      </h3>
+                      <p class="text-gray-500 text-sm">UI/UX</p>
+                    </figcaption>
+                  </a>
+                </figure>
+                <figure
+                  class="portfolio-item portfolio-card text-white rounded-lg overflow-hidden scroll-fade-up"
+                  data-category="uiux"
+                >
+                  <a href="blog-post-1.html" class="block text-white w-full">
+                    <div class="relative group overflow-hidden">
+                      <img
+                        src="https://images.pexels.com/photos/3183153/pexels-photo-3183153.jpeg"
+                        alt="Blog 1"
+                        class="w-full h-40 object-cover transition-transform duration-300 group-hover:scale-110 rounded-2xl"
+                      />
+
+                      <!-- Eye Icon Overlay -->
+                      <div
+                        class="absolute inset-0 flex items-center justify-center bg-gray-600/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg"
+                      >
+                        <div
+                          class="px-6 py-3 bg-gray-600 rounded-lg flex items-center justify-center border border-none"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="#FFD700"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M15 12A3 3 0 119 12a3 3 0 016 0zM2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.478 0-8.268-2.943-9.542-7z"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <figcaption class="p-4">
+                      <h3 class="font-normal text-gray-300">Landing Page</h3>
+                      <p class="text-gray-500 text-sm">UI/UX</p>
+                    </figcaption>
+                  </a>
+                </figure>
+                <figure
+                  class="portfolio-item portfolio-card text-white rounded-lg overflow-hidden scroll-fade-up"
+                  data-category="uiux"
+                >
+                  <a href="blog-post-1.html" class="block text-white w-full">
+                    <div class="relative group overflow-hidden">
+                      <img
+                        src="https://images.pexels.com/photos/3183153/pexels-photo-3183153.jpeg"
+                        alt="Blog 1"
+                        class="w-full h-40 object-cover transition-transform duration-300 group-hover:scale-110 rounded-2xl"
+                      />
+
+                      <!-- Eye Icon Overlay -->
+                      <div
+                        class="absolute inset-0 flex items-center justify-center bg-gray-600/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg"
+                      >
+                        <div
+                          class="px-6 py-3 bg-gray-600 rounded-lg flex items-center justify-center border border-none"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="#FFD700"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M15 12A3 3 0 119 12a3 3 0 016 0zM2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.478 0-8.268-2.943-9.542-7z"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <figcaption class="p-4">
+                      <h3 class="font-normal text-gray-300">Form Designs</h3>
+                      <p class="text-gray-500 text-sm">UI/UX</p>
+                    </figcaption>
+                  </a>
+                </figure>
+                <figure
+                  class="portfolio-item portfolio-card text-white rounded-lg overflow-hidden scroll-fade-up"
+                  data-category="uiux"
+                >
+                  <a href="blog-post-1.html" class="block text-white w-full">
+                    <div class="relative group overflow-hidden">
+                      <img
+                        src="https://images.pexels.com/photos/3183153/pexels-photo-3183153.jpeg"
+                        alt="Blog 1"
+                        class="w-full h-40 object-cover transition-transform duration-300 group-hover:scale-110 rounded-2xl"
+                      />
+
+                      <!-- Eye Icon Overlay -->
+                      <div
+                        class="absolute inset-0 flex items-center justify-center bg-gray-600/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg"
+                      >
+                        <div
+                          class="px-6 py-3 bg-gray-600 rounded-lg flex items-center justify-center border border-none"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="#FFD700"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M15 12A3 3 0 119 12a3 3 0 016 0zM2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.478 0-8.268-2.943-9.542-7z"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <figcaption class="p-4">
+                      <h3 class="font-normal text-gray-300">
+                        Exchangerate Tool
+                      </h3>
+                      <p class="text-gray-500 text-sm">UI/UX</p>
+                    </figcaption>
+                  </a>
+                </figure>
+              </div>
+            </div>
+          </section>
+
+          <!--Blog Section-->
+          <section class="mb-6">
+            <div id="blog" class="tab-content hidden">
+              <section
+                class="flex flex-col"
+                role="Blog"
+                aria-label="Blog Section"
+              >
+                <header
+                  class="flex flex-col sm:mr-0 sm:w-auto mr-2 w-full sm:mt-10 pl-4 mb-6"
+                >
+                  <h1 class="text-4xl font-bold text-white scroll-fade-up">
+                    Blog
+                  </h1>
+                  <div
+                    class="w-12 h-1 bg-yellow-600 mt-2 rounded-2xl scroll-underline underline-animate"
+                  ></div>
+                </header>
+
+                <div
+                  class="grid grid-cols-1 md:grid-cols-2 gap-6 px-1 sm:gap-8 sm:px-10 sm:mb-8 blog-section"
+                >
+                  <!-- Blog Card 1 -->
+                  <article
+                    class="blog-card bg-gray-900 text-white rounded-lg overflow-hidden shadow-lg transition duration-300 group"
+                  >
+                    <a
+                      href="blog-post-1.html"
+                      class="block focus:outline-none focus:ring-2 focus:ring-yellow-500"
+                      aria-label="Read Blog Title 1"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <div class="overflow-hidden">
+                        <img
+                          src="https://images.pexels.com/photos/3183153/pexels-photo-3183153.jpeg"
+                          alt="Team working on laptops in an office"
+                          class="w-full h-56 object-cover transform transition duration-300 group-hover:scale-110 rounded-2xl"
+                        />
+                      </div>
+                      <div class="p-4">
+                        <p class="text-gray-400 text-sm mt-2 mb-4">
+                          Blog Nov 2024
+                        </p>
+                        <h3
+                          class="text-2xl font-bold text-white transition group-hover:text-yellow-400 mb-4"
+                        >
+                          Blog Title 1
+                        </h3>
+                        <p class="text-gray-400 text-sm">
+                          Short description of the blog post goes here. Keep it
+                          brief and engaging.
+                        </p>
+                      </div>
+                    </a>
+                  </article>
+
+                  <!-- Blog Card 2 -->
+                  <article
+                    class="blog-card bg-gray-900 text-white rounded-lg overflow-hidden shadow-lg transition duration-300 group"
+                  >
+                    <a
+                      href="blog-post-2.html"
+                      class="block focus:outline-none focus:ring-2 focus:ring-yellow-500"
+                      aria-label="Read Blog Title 2"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <div class="overflow-hidden">
+                        <img
+                          src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg"
+                          alt="Office discussion between two people"
+                          class="w-full h-56 object-cover transform transition duration-300 group-hover:scale-110 rounded-2xl"
+                        />
+                      </div>
+                      <div class="p-4">
+                        <p class="text-gray-400 text-sm mt-2 mb-4">
+                          Blog Nov 2024
+                        </p>
+                        <h3
+                          class="text-2xl font-bold text-white transition group-hover:text-yellow-400 mb-4"
+                        >
+                          Blog Title 2
+                        </h3>
+                        <p class="text-gray-400 text-sm">
+                          Short description of the blog post goes here. Keep it
+                          brief and engaging.
+                        </p>
+                      </div>
+                    </a>
+                  </article>
+                </div>
+              </section>
+            </div>
+          </section>
+
+          <!--Contact Section-->
+          <section id="contact" class="tab-content hidden">
+            <div>
+              <div class="flex flex-col gap-6">
+                <header
+                  class="flex flex-col sm:mr-0 sm:w-auto mr-2 w-full sm:mt-10 pl-4 mb-6"
+                >
+                  <h2 class="text-4xl font-bold text-white scroll-fade-up">
+                    Contact
+                  </h2>
+                  <div
+                    class="w-12 h-1 bg-yellow-600 mt-2 rounded-2xl scroll-underline underline-animate"
+                  ></div>
+                </header>
+                <!-- Google Map -->
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.1571822862697!2d-0.2533239253215412!3d5.690414494291298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9e59ad35e225%3A0x992aceb3f653e71e!2sKwabenya%20Pokuase%20Road!5e0!3m2!1sen!2sgh!4v1742465488426!5m2!1sen!2sgh"
+                  class="w-full h-[450px] rounded-2xl sm:rounded-lg z-10"
+                  style="border: 2px whitesmoke; padding-left: 2px"
+                  allowfullscreen
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  title="Map showing Kwabenya Pokuase Road"
+                >
+                </iframe>
+
+                <!-- Contact Form -->
+                <div class="w-full p-2 rounded-lg pl-2 scroll-fade-up">
+                  <h3 class="text-2xl font-bold text-white mb-4">Contact Me</h3>
+                  <div
+                    id="form-message"
+                    class="transition-opacity duration-500 opacity-0 hidden text-center text-base mb-4"
+                  ></div>
+                  <form
+                    action="https://formspree.io/f/xblovwdg"
+                    method="POST"
+                    class="space-y-4"
+                    role="form"
+                    aria-label="Contact Form"
+                  >
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <input
+                        type="text"
+                        name="name"
+                        placeholder="Full Name"
+                        class="w-full p-3 border border-gray-500 bg-gray-600 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-300 text-white"
+                      />
+                      <input
+                        type="email"
+                        name="email"
+                        placeholder="Email Address"
+                        class="w-full p-3 border border-gray-500 bg-gray-600 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-300 text-white z-10"
+                      />
+                    </div>
+                    <input
+                      type="text"
+                      name="subject"
+                      placeholder="Subject"
+                      class="w-full p-3 border border-gray-500 bg-gray-600 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-300 text-white"
+                    />
+                    <textarea
+                      name="message"
+                      placeholder="Your Message"
+                      class="w-full p-3 border border-gray-500 bg-gray-600 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-300 text-white"
+                      rows="6"
+                    ></textarea>
+
+                    <!-- Submit Button -->
+                    <div class="flex sm:justify-end justify-center mb-4">
+                      <button
+                        type="submit"
+                        class="w-full sm:w-auto bg-gray-600 border-gray-500 text-white px-6 py-3 rounded-lg hover:bg-gray-400 transition flex items-center space-x-2 shadow-[-0.5px_-0.5px_0_rgba(212,175,55,1)] z-10 cursor-pointer"
+                      >
+                        <span class="text-yellow-400 w-full"
+                          >🚀 Send Message</span
+                        >
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+    <script src="../js/script.js"></script>
+    <script src="../js/script1.js"></script>
+    <script src="../js/toggle.js"></script>
+    <script src="../js/animate.js"></script>
+    <script src="../js/contact.js"></script>
+    <script src="../js/autoScroll.js"></script>
+    <script type="module" src="../js/animateCard.js"></script>
+  </body>
+</html>
