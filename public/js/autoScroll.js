@@ -2,13 +2,14 @@ document.addEventListener("DOMContentLoaded", () => {
   const scrollContainer = document.querySelector(".scroll-auto");
 
   let scrollAmount = 0;
+  let scrollDirection = 1;
   let isPaused = false;
 
   function autoScroll() {
     if (!scrollContainer) return;
 
     if (!isPaused) {
-      scrollAmount += 1;
+      scrollAmount += scrollDirection;
       scrollContainer.scrollLeft = scrollAmount;
 
       // Loop the cards seamlessly
@@ -16,7 +17,10 @@ document.addEventListener("DOMContentLoaded", () => {
         scrollAmount >=
         scrollContainer.scrollWidth - scrollContainer.clientWidth
       ) {
-        scrollAmount = 0;
+        scrollDirection = -1;
+      }
+      if (scrollAmount <= 0) {
+        scrollDirection = 1;
       }
     }
 
