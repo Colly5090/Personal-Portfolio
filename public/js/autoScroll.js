@@ -12,7 +12,10 @@ document.addEventListener("DOMContentLoaded", () => {
       scrollContainer.scrollLeft = scrollAmount;
 
       // Loop the cards seamlessly
-      if (scrollAmount >= scrollContainer.scrollWidth) {
+      if (
+        scrollAmount >=
+        scrollContainer.scrollWidth - scrollContainer.clientWidth
+      ) {
         scrollAmount = 0;
       }
     }
@@ -27,6 +30,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Resume on mouse leave
   scrollContainer.addEventListener("mouseleave", () => {
+    isPaused = false;
+  });
+
+  scrollContainer.addEventListener("touchstart", () => {
+    isPaused = true;
+  });
+
+  scrollContainer.addEventListener("touchend", () => {
     isPaused = false;
   });
 
