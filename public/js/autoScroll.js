@@ -30,13 +30,5 @@ document.addEventListener("DOMContentLoaded", () => {
     isPaused = false;
   });
 
-  scrollContainer.addEventListener("touchstart", () => {
-    stopScrolling = true;
-  });
-
-  scrollContainer.addEventListener("touchend", () => {
-    stopScrolling = false;
-  });
-
   autoScroll();
 });
